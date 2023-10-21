@@ -1,0 +1,173 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:400);
+
+.dashboard{
+        color:gray;
+}
+.dashboard:hover{
+        color: white;
+}
+
+#active{
+      color:blue;
+}
+.accounts:hover{
+      color:white;
+}
+
+.posts:hover{
+      color:white;
+}
+.navigation {
+  width: 100%;
+}
+
+.fa-sign-out-alt {
+  font-size: 15px;
+  float: left;
+  color:white;
+  padding:2px;
+}
+
+.logout {
+  font-size: 13px;
+  font-family: 'Oswald', sans-serif;
+  color:white;
+  overflow: hidden;
+  letter-spacing: 3px;
+}
+.logout:hover{
+  color:yellow;
+}
+
+.button {
+	text-decoration: none;
+	float: right;
+  color: white;
+  width: 200px;
+  overflow: hidden
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.container{
+  width:90%;
+}
+
+/*.table-responsive{
+  margin-left:-60px
+}
+
+th{
+  font: 10px;
+}*/
+
+.feather {
+  width: 16px;
+  height: 16px;
+}
+
+/*
+ * Sidebar
+ */
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  /* rtl:raw:
+  right: 0;
+  */
+  bottom: 0;
+  /* rtl:remove */
+  left: 0;
+  z-index: 100; /* Behind the navbar */
+  padding: 48px 0 0; /* Height of navbar */
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+}
+
+@media (max-width: 767.98px) {
+  .sidebar {
+    top: 5rem;
+  }
+}
+
+.sidebar-sticky {
+  height: calc(100vh - 48px);
+  overflow-x: auto;
+  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+}
+
+.sidebar .nav-link {
+  font-weight: 500;
+  color: rgb(175, 175, 175);
+}
+
+.sidebar .nav-link .feather {
+  margin-right: 4px;
+  color: #c9c7c7;
+}
+
+.sidebar .nav-link.active {
+  color: #2470dc;
+}
+
+.sidebar .nav-link:hover .feather,
+.sidebar .nav-link.active .feather {
+  color: white;
+}
+
+.sidebar-heading {
+  font-size: .75rem;
+}
+
+/*
+ * Navbar
+ */
+
+.navbar-brand {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  background-color: rgba(0, 0, 0, .25);
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .25);
+}
+
+.navbar .navbar-toggler {
+  top: .25rem;
+  right: 1rem;
+}
+
+.navbar .form-control {
+  padding: .75rem 1rem;
+}
+
+.form-control-dark {
+  color: #fff;
+  background-color: rgba(255, 255, 255, .1);
+  border-color: rgba(255, 255, 255, .1);
+}
+
+.form-control-dark:focus {
+  border-color: transparent;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
+}
+

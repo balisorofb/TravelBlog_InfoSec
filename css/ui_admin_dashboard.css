@@ -1,0 +1,147 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:400);
+
+.dashboard{
+    color:gray;
+}
+.dashboard:hover{
+    color: white;
+}
+
+#active{
+  color:blue;
+}
+.accounts:hover{
+  color:white;
+}
+
+.posts:hover{
+  color:white;
+}
+.navigation{
+width: 100%;
+}
+
+.fa-sign-out-alt{
+font-size: 15px;
+float: left;
+color:white;
+padding:2px;
+}
+
+.logout{
+font-size: 13px;
+font-family: 'Oswald', sans-serif;
+color:white;
+overflow: hidden;
+letter-spacing: 3px;
+}
+
+.logout:hover{
+color:yellow;
+}
+
+.button{
+text-decoration: none;
+float: right;
+color: white;
+width: 200px;
+overflow: hidden
+}
+
+:root{
+--color1: #9387ff;
+--color2: #7465ff;
+--color3: #34e79e;
+--red: hsl(0, 78%, 62%);
+--cyan: hsl(180, 62%, 55%);
+--orange: hsl(34, 97%, 64%);
+--blue: hsl(212, 86%, 64%);
+--varyDarkBlue: hsl(234, 12%, 34%);
+--grayishBlue: hsl(229, 6%, 66%);
+--veryLightGray: hsl(0, 0%, 98%);
+--weight1: 200;
+--weight2: 400;
+--weight3: 600;
+}
+
+.box{
+    border-radius: 10px;
+    box-shadow: 0px 30px 40px -20px var(--grayishBlue);
+    padding: 20px;
+    margin: 20px;  
+}
+
+.fa-user-plus{
+    float: right;
+    opacity: 0.5; 
+    font-size:58px;
+}
+
+.fa-comments{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:10px;
+    font-size:45px;
+}
+
+h2{
+    color: var(--varyDarkBlue);
+    font-weight: var(--weight3);
+}
+
+.row1-container{
+        display: flex;
+}
+  
+.box1{
+    width: 40%;
+    height: 30%;
+    background-color: var(--color1);
+    padding:25px;
+}
+
+.box2{
+    width: 40%;
+    height: 30%;
+    background-color: var(--color3);
+    padding:30px;
+}
+
+.container{
+    margin:1px;    
+    background-color: var(--color2); 
+}
+
+.container a{
+      color:#013220;
+}
+
+.container a:hover{
+      color:white;
+}
+  
+.cardBox{
+    height:150px;
+    width:40%;
+}
+  
+.linkInfo{
+    text-align: center;
+}
+
+.chartContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 45px;
+}
+
+.chart{
+    padding: 2rem;
+    border: 1px solid #f49131;
+    border-radius: 1rem;
+    background: #251c35;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.8);
+}

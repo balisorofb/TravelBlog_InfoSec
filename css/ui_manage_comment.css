@@ -1,0 +1,48 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:400);
+
+.dashboard{
+        color:gray;
+}
+.dashboard:hover{
+        color: white;
+}
+
+#active{
+      color:blue;
+}
+.accounts:hover{
+      color:white;
+}
+
+.posts:hover{
+      color:white;
+}
+.navigation {
+  width: 100%;
+}
+
+.fa-sign-out-alt {
+  font-size: 15px;
+  float: left;
+  color:white;
+  padding:2px;
+}
+
+.logout {
+  font-size: 13px;
+  font-family: 'Oswald', sans-serif;
+  color:white;
+  overflow: hidden;
+  letter-spacing: 3px;
+}
+.logout:hover{
+  color:yellow;
+}
+
+.button {
+	text-decoration: none;
+	float: right;
+  color: white;
+  width: 200px;
+  overflow: hidden
+}
