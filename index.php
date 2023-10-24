@@ -1,4 +1,7 @@
+
+
 <!doctype html>
+
 <html lang="en">
 <head>
 <style>
@@ -173,39 +176,13 @@
 
 
 
-	  <section class="py-5" >
-	  	<div class="container">
-	  		<div class="row">
-	  			<div class="col-md-12">
-	  				<h1 class="h3 mb-3 fw-normal">Comments</h1>
-	  				<table class="table table-striped table-responsive">
-                      <thead>
-                        <tr>
-                        <th scope="col">Message</th>
-                        <th scope="col">Post Date</th>
-                        </tr>
-                    </thead>
 
-                    <tbody>
-                        <!--PHP routine to Display Data-->
-						<?php
-            		    include_once("config1.php");
-             		   	$result = mysqli_query($mysqli, "SELECT * FROM tblcomments ORDER BY id DESC");
-             		   	while($res = mysqli_fetch_array($result)) {
-              		    	echo "<tr>";
-              		   		echo "<td>".$res['Comment']."</td>";
-              		    	echo "<td>".$res['PostedDate']."</td>";
-                		  	echo "<tr>";
-              		  	}
 
-            		  ?>
-                    </tbody>
 
-                    </table>
-	  			</div>
-	  		</div>	
-	  	</div>
-	  </section>
+
+
+
+
 
 	</main>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>

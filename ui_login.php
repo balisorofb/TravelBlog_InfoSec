@@ -36,6 +36,7 @@ if(isset($_POST['submit'])){
 
          $_SESSION['user_id'] = $row['ID'];
          header('location:film.php');
+		 echo '<script>var isAuthenticated = true;</script>';
 
       }else{
          $message[] = 'no user found!';
@@ -74,6 +75,10 @@ if(isset($_POST['submit'])){
 	.btnSubmit{
 		margin-top:50px
 	}
+	form{
+		background-color: black;
+	}
+
 	
   </style>
 
@@ -132,7 +137,7 @@ if(isset($message)){
 
 				<p class="light"><a href="#">Forgot password?</a></p>
 			</div>
-			<input type="submit" class="btn btn-primary btn-lg btnSubmit" name="submit" value="Login now" >
+			<input type="submit" class="btn btn-primary btn-lg btnSubmit" name="submit" value="Login now"  onclick="onSignInSuccess()" >
 		</form>
 
 		<footer>
@@ -144,6 +149,23 @@ if(isset($message)){
 	</div>
 	</main>
 	<script src="js/bootstrap.min.js"></script>
+	<script>
+		function updateAuthenticationStatus(isAuthenticated) {
+    var xhr = new XMLHttpRequest();
+    var url = 'update-auth-status.php'; // URL of your PHP script
+
+    xhr.open('POST', url, true);
+    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+            console.log('Authentication status updated on the server.');
+        }
+    };
+
+    xhr.send('isAuthenticated=' + isAuthenticated);
+}
+</script>
 </body>
 
 </html>
