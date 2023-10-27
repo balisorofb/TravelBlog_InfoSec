@@ -39,7 +39,7 @@ if(isset($_POST['submit'])){
             }else{
                move_uploaded_file($image_tmp_name, $image_folder);
                $message[] = 'registered successfully!';
-               header('location:ui_login.php');
+               header('location:index.php');
             }
          }
 

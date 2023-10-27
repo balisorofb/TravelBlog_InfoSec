@@ -6,6 +6,6 @@ session_start();
 session_unset();
 session_destroy();
 
-header('location:ui_login.php');
+header('location:index.php');
 
 ?>

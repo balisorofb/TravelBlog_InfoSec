@@ -2,6 +2,9 @@
 <?php
 
 include 'backend_add_account.php';
+session_start();
+session_unset();
+session_destroy();
 
 ?>
 

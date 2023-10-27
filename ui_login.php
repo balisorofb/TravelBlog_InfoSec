@@ -35,7 +35,7 @@ if(isset($_POST['submit'])){
       }elseif($row['Usertype'] == 'user'){
 
          $_SESSION['user_id'] = $row['ID'];
-         header('location:film.php');
+         header('location:index1.php');
 		 echo '<script>var isAuthenticated = true;</script>';
 
       }else{
@@ -166,6 +166,16 @@ if(isset($message)){
     xhr.send('isAuthenticated=' + isAuthenticated);
 }
 </script>
+
+
+
+
+
+
+
+
+
+
 </body>
 
 </html>

@@ -9,7 +9,7 @@ session_start();
 $user_id = $_SESSION['admin_id'];
 
 if(!isset($user_id)){
-   header('location:index.php');
+  header('location:access_denied.php');
 };
 
 ?>

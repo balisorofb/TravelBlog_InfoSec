@@ -1,26 +1,21 @@
-<?php 
-    // include database connection file
-    include_once("config.php");
-  
-    $name = $_POST['Name'];
-    $name = filter_var($name, FILTER_SANITIZE_STRING);
-    $comment = $_POST['comment'];
-    $comment = filter_var($comment, FILTER_SANITIZE_STRING);
-    $datePosted = date("Y-m-d");
+<?php
+include_once("config.php");
 
+$name = $_POST['Name'];
+$name = filter_var($name, FILTER_SANITIZE_STRING);
+$comment = $_POST['comment'];
+$comment = filter_var($comment, FILTER_SANITIZE_STRING);
+$datePosted = date("Y-m-d");
+$rating = $_POST['rating']; // Get the rating from the form
 
-    // Insert data into table
-   // $result = mysqli_query($mysqli, "INSERT INTO tblcomments(Comment,PostedDate)
-  //  VALUES('$comment','$datePosted')");
+$sql = "INSERT INTO tblcomments (Name, Comment, PostedDate, Rating) VALUES (:name, :comment, :datePosted, :rating)";
+$stmt = $conn->prepare($sql);
+$stmt->bindParam(':name', $name, PDO::PARAM_STR);
+$stmt->bindParam(':comment', $comment, PDO::PARAM_STR);
+$stmt->bindParam(':datePosted', $datePosted, PDO::PARAM_STR);
+$stmt->bindParam(':rating', $rating, PDO::PARAM_INT);
+$stmt->execute();
 
-
-$result = $conn->prepare("INSERT INTO tblcomments(Name,Comment,PostedDate)
-VALUES('$name','$comment','$datePosted')");
-          $result->execute();
-
-    // Show message when data is added
-    ;
-    echo "<script>window.location.href = 'film.php';</script>";
-    
-  
+// Show message when data is added
+echo "<script>window.location.href = 'film.php';</script>";
 ?>

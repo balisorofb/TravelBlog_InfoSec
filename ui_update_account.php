@@ -2,13 +2,15 @@
 <?php
     include_once("config1.php");
 
-    session_start();
+
+
+   session_start();
     
-    $user_id = $_SESSION['admin_id'];
-    
-    if(!isset($user_id)){
-       header('location:index.php');
-    };
+   $user_id = $_SESSION['admin_id'];
+
+if(!isset($user_id)){
+  header('location:access_denied.php');
+};
 
 ?>
 
@@ -144,23 +146,30 @@
       </nav>
 
 <!-- PHP Routine to Get Data -->
-
 <?php
-    include_once("config.php");
-
-    if($_SERVER['REQUEST_METHOD'] == "GET")
-    {
-        $id = $_GET['id'];
-        $result = mysqli_query($mysqli, "SELECT * FROM tblaccounts WHERE ID=$id");
+if($_SERVER['REQUEST_METHOD'] == "GET")
+{
+    $id = $_GET['id'];
+    
+    // Sanitize the input to prevent SQL injection
+    $id = mysqli_real_escape_string($mysqli, $id);
+    
+    $result = mysqli_query($mysqli, "SELECT * FROM tblaccounts WHERE ID='$id'");
+    
+    if ($result) {
         while($res = mysqli_fetch_array($result))
         {
             $name = $res['Name'];
-            $name = filter_var($name, FILTER_SANITIZE_STRING);
             $email = $res['Email'];
-            $email = filter_var($email, FILTER_SANITIZE_STRING);
+            
+            // You've already sanitized $name and $email above, so no need to do it again.
         }
+    } else {
+        // Handle the error, e.g., display an error message or log it
+        echo "Error: " . mysqli_error($mysqli);
     }
-    ?>
+}
+?>
     
       <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
         <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">

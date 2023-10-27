@@ -196,3 +196,26 @@ Stack trace:
 [14-Mar-2023 03:35:53 Europe/Berlin] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in C:\xampp\htdocs\TravelBlog_InfoSec\ui_manage_account.php on line 257
 [14-Mar-2023 03:35:53 Europe/Berlin] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, bool given in C:\xampp\htdocs\TravelBlog_InfoSec\ui_manage_account.php on line 258
 [14-Mar-2023 03:35:53 Europe/Berlin] PHP Warning:  mysqli_close(): Couldn't fetch mysqli in C:\xampp\htdocs\TravelBlog_InfoSec\ui_manage_account.php on line 274
+[25-Oct-2023 22:11:45 Europe/Berlin] PHP Warning:  Undefined array key "admin_id" in C:\xampp\htdocs\TravelBlog_InfoSec\ui_manage_account.php on line 9
+[26-Oct-2023 23:56:27 Europe/Berlin] PHP Warning:  Undefined array key "image" in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 20
+[26-Oct-2023 23:56:27 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 20
+[26-Oct-2023 23:56:27 Europe/Berlin] PHP Warning:  Undefined array key "image" in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 22
+[26-Oct-2023 23:56:27 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 22
+[26-Oct-2023 23:56:27 Europe/Berlin] PHP Warning:  Undefined array key "image" in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 23
+[26-Oct-2023 23:56:27 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 23
+[27-Oct-2023 03:52:34 Europe/Berlin] PHP Warning:  Undefined array key "id" in C:\xampp\htdocs\TravelBlog_InfoSec\backend_update_account.php on line 7
+[27-Oct-2023 03:52:34 Europe/Berlin] PHP Warning:  Undefined array key "Name" in C:\xampp\htdocs\TravelBlog_InfoSec\backend_update_account.php on line 8
+[27-Oct-2023 03:52:34 Europe/Berlin] PHP Warning:  Undefined array key "Email" in C:\xampp\htdocs\TravelBlog_InfoSec\backend_update_account.php on line 11
+[27-Oct-2023 03:52:34 Europe/Berlin] PHP Warning:  Undefined array key "Password" in C:\xampp\htdocs\TravelBlog_InfoSec\backend_update_account.php on line 14
+[27-Oct-2023 03:52:34 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 2 in C:\xampp\htdocs\TravelBlog_InfoSec\backend_update_account.php:37
+Stack trace:
+#0 C:\xampp\htdocs\TravelBlog_InfoSec\backend_update_account.php(37): PDOStatement->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\TravelBlog_InfoSec\backend_update_account.php on line 37
+[27-Oct-2023 03:58:04 Europe/Berlin] PHP Warning:  Undefined variable $session_timeout in C:\xampp\htdocs\TravelBlog_InfoSec\backend_login.php on line 7
+[27-Oct-2023 03:58:04 Europe/Berlin] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\TravelBlog_InfoSec\ui_manage_account.php on line 8
+[27-Oct-2023 03:58:04 Europe/Berlin] PHP Warning:  Undefined array key "admin_id" in C:\xampp\htdocs\TravelBlog_InfoSec\ui_manage_account.php on line 10
+[27-Oct-2023 03:58:09 Europe/Berlin] PHP Warning:  Undefined variable $session_timeout in C:\xampp\htdocs\TravelBlog_InfoSec\backend_login.php on line 7
+[27-Oct-2023 04:00:13 Europe/Berlin] PHP Warning:  Undefined variable $session_timeout in C:\xampp\htdocs\TravelBlog_InfoSec\backend_login.php on line 7
+[27-Oct-2023 04:00:49 Europe/Berlin] PHP Warning:  Undefined array key "admin_id" in C:\xampp\htdocs\TravelBlog_InfoSec\ui_manage_account.php on line 9
+[27-Oct-2023 04:07:45 Europe/Berlin] PHP Warning:  Undefined array key "admin_id" in C:\xampp\htdocs\TravelBlog_InfoSec\ui_manage_account.php on line 9
