@@ -70,8 +70,10 @@ i {
 }
 
 div a {
-    text-decoration: none;
+    text-decoration: underline;
+    color: rebeccapurple;
 }
+
 
 b {
     color: #81a2be;
@@ -81,7 +83,6 @@ a.avatar {
     position: fixed;
     bottom: 15px;
     right: -100px;
-    animation: slide 0.5s 4.5s forwards;
     display: block;
     z-index: 4
 }
@@ -92,18 +93,7 @@ a.avatar img {
     border: 2px solid white;
 }
 
-@keyframes slide {
-    from {
-        right: -100px;
-        transform: rotate(360deg);
-        opacity: 0;
-    }
-    to {
-        right: 15px;
-        transform: rotate(0deg);
-        opacity: 1;
-    }
-}
+
 
 
 
@@ -121,22 +111,5 @@ a.avatar img {
 
 
 
-<script>
-    var str = document.getElementsByTagName('div')[0].innerHTML.toString();
-var i = 0;
-document.getElementsByTagName('div')[0].innerHTML = "";
-
-setTimeout(function() {
-    var se = setInterval(function() {
-        i++;
-        document.getElementsByTagName('div')[0].innerHTML = str.slice(0, i) + "|";
-        if (i == str.length) {
-            clearInterval(se);
-            document.getElementsByTagName('div')[0].innerHTML = str;
-        }
-    }, 10);
-},0);
-
-    </script>
 </body>
 </html>

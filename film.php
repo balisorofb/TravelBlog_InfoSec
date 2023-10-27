@@ -33,6 +33,32 @@ if (isset($_SESSION['user_id']) && !empty($_SESSION['user_id'])) {
 	.site-header{
 		background-image:url('images/headerbg.png');
 	}
+    .play-button {
+            width: 100px;
+            height: 100px;
+            background-color: #FF0000; /* Red background color */
+            border-radius: 50%; /* Create a circle */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            display: absolute;
+        }
+
+        /* Triangle shape to simulate the play icon */
+        .play-button::before {
+            content: '';
+            width: 0;
+            height: 0;
+            border-top: 20px solid transparent;
+            border-bottom: 20px solid transparent;
+            border-left: 30px solid #FFF; /* White triangle */
+        }
+
+        /* Hover effect (e.g., change background color) */
+        .play-button:hover {
+            background-color: #FF6666; /* Lighter red on hover */
+        }
 	.fas{
 		background:none;
 		border:none;
@@ -214,6 +240,9 @@ if (isset($_SESSION['user_id']) && !empty($_SESSION['user_id'])) {
 .feedback-date {
     color: #888;
 }
+.container video{
+    filter: brightness(0.80); 
+}
 
 </style>
 	<meta charset="utf-8">
@@ -231,67 +260,64 @@ if (isset($_SESSION['user_id']) && !empty($_SESSION['user_id'])) {
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="embed-responsive embed-responsive-16by9">
-				<video id="videoPlayer">
-				<source src="images/bath.mp4" type="video/mp4">
-				</video>
-                </div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="embed-responsive embed-responsive-16by9">
+                <video id="videoPlayer">
+                    <source src="images/bath.mp4" type="video/mp4" class="video">
+                </video>
+                <?php
+                if (!isset($_SESSION['user_id']) || empty($_SESSION['user_id'])) {
+                    echo '<button id="playButton" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 1;" class="play-button" type="button" data-toggle="modal" data-target="#authModal"></button>';
+                }
+                ?>
             </div>
         </div>
-        <?php
-        if (!isset($_SESSION['user_id']) || empty($_SESSION['user_id'])) {
-            echo '<button id="playButton" class="btn btn-lg btn-primary" type="button" data-toggle="modal" data-target="#authModal">Play Video</button> ';
-        }
-    ?>
-
+            </div>
 
 <!-- COMMENT-->
 
 <br>
-
+<br>
 <form action="backend_add_comment.php" method="POST" name="frmAccountUpdate" enctype="multipart/form-data" autocomplete="off">
-        <!-- Include a hidden input field to submit the user's name -->
-        <input type="hidden" class="form-control" id="Name" name="Name" value="<?php echo $user_name; ?>">
+    <!-- Include a hidden input field to submit the user's name -->
+    <input type="hidden" class="form-control" id="Name" name="Name" value="<?php echo $user_name; ?>">
+    
+    <div>
+        <?php
+        $sanitizedName = '';
 
-        <div>
-       
-       <?php
-$sanitizedName = '';
+        // Check if the "user_id" is set in the session
+        if (isset($_SESSION['user_id'])) {
+            $user_id = $_SESSION['user_id'];
 
-// Check if the "user_id" is set in the session
-if (isset($_SESSION['user_id'])) {
-    $user_id = $_SESSION['user_id'];
+            // Prepare and execute the query
+            $select_profile = $conn->prepare("SELECT * FROM tblaccounts WHERE ID = :user_id");
+            $select_profile->bindParam(':user_id', $user_id, PDO::PARAM_INT);
+            $select_profile->execute();
 
-    // Prepare and execute the query
-    $select_profile = $conn->prepare("SELECT * FROM tblaccounts WHERE ID = :user_id");
-    $select_profile->bindParam(':user_id', $user_id, PDO::PARAM_INT);
-    $select_profile->execute();
+            $fetch_profile = $select_profile->fetch(PDO::FETCH_ASSOC);
 
-    $fetch_profile = $select_profile->fetch(PDO::FETCH_ASSOC);
-
-    // Check if the 'Name' key exists in the fetched profile array
-    if (isset($fetch_profile['Name'])) {
-        $sanitizedName = htmlspecialchars($fetch_profile['Name'], ENT_QUOTES, 'UTF-8');
-    }
-}
-?>
-
-<div class="profile-info">
-    <label for="Name" class="text-dark w-50 form-label h6">Name:</label>
-    <input type="text" class="form-control" id="Name" name="Name" required value="<?php echo $sanitizedName; ?>" readonly>
-</div>
-
-
+            // Check if the 'Name' key exists in the fetched profile array
+            if (isset($fetch_profile['Name'])) {
+                $sanitizedName = htmlspecialchars($fetch_profile['Name'], ENT_QUOTES, 'UTF-8');
+            }
+        }
+        ?>
+        
+        <div class="profile-info">
+            <label for="Name" class="text-dark w-50 form-label h6">Name:</label>
+            <input type="text" class="form-control" id="Name" name="Name" required value="<?php echo $sanitizedName; ?>" readonly>
+        </div>
+        
         <br>
         <div>
             <label for="Email" class="text-dark w-50 form-label h6">Comment:</label>
-            <textarea id="comment" name="comment" class="textComment" onkeyup="this.value=this.value.replace(/[^a-zA-Z0-9.!?,-]/g, ' ' )" required></textarea>
+            <textarea id="comment" name="comment" class="textComment" onkeyup="this.value=this.value.replace(/[^a-zA-Z0-9.!?,-]/g, ' ')" required></textarea>
         </div>
+        
         <br>
-
         <div>
             <label for="rating" class="text-dark w-50 form-label h6">Rating:</label>
             <div class="rating">
@@ -303,12 +329,15 @@ if (isset($_SESSION['user_id'])) {
             </div>
             <input type="hidden" id="rating" name="rating" value="0" required>
         </div>
-
+        
         <br>
-
-        <button type="submit" class="btn btn-primary">SUBMIT</button>
-
-    </form>
+        <?php
+        if (!isset($_SESSION['user_id']) || empty($_SESSION['user_id'])) {
+            echo '<button type="button" class="btn btn-primary" id="submit-button">SUBMIT</button>';
+        }
+        ?>
+    </div>
+</form>
 
     <script>
         const stars = document.querySelectorAll('.rating i');
@@ -541,22 +570,32 @@ confirm_password.onkeyup = validatePassword;
 
 
 
+  <!-- AUTHENTICATE IF USER NOT LOG In -->
 
-
-<script>
+  <script>
     var modal = document.getElementById('myModal');
     var video = document.getElementById('videoPlayer');
     var closeBtn = document.getElementById('closeModal');
     var isAuthenticated = <?php echo (isset($_SESSION['user_id']) && !empty($_SESSION['user_id'])) ? 'true' : 'false'; ?>;
     var playButton = document.getElementById('playButton');
-    
+    var submitButton = document.getElementById('submit-button');
+
+    // Intercept form submission
+    submitButton.addEventListener('click', function (event) {
+        if (!isAuthenticated) {
+            event.preventDefault(); // Prevent the form from submitting
+            playButton.click(); // Trigger the click event on playButton to open the modal
+        }
+    });
+
     if (!isAuthenticated) {
         // User is not authenticated, show the modal when they try to play the video.
-        playButton.addEventListener('click', function() {
+        playButton.addEventListener('click', function () {
             modal.style.display = 'block';
             video.pause();
         });
-        closeBtn.addEventListener('click', function() {
+
+        closeBtn.addEventListener('click', function () {
             modal.style.display = 'none';
         });
 

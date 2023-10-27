@@ -1,6 +1,6 @@
 <?php
 
-$db_name = "mysql:host=localhost;dbname=blogsite";
+$db_name = "mysql:host=localhost;dbname=taralarodb";
 $username = "root";
 $password = "";
 

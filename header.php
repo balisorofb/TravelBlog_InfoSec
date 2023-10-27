@@ -143,6 +143,26 @@ session_start();
             box-shadow: 0 0 2px 3px #fff;
         }
 
+        .button-1 {
+            background: rgb(195,34,56);
+background: linear-gradient(0deg, rgba(195,34,56,1) 0%, rgba(193,181,41,1) 38%, rgba(206,119,42,1) 61%, rgba(253,121,45,1) 100%);
+            color: black;
+            padding: 10px;
+            margin-top: 2rem;
+            border-radius: 6px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            border: none;
+            font-weight: 600;
+            transition: all 0.6s ease;
+        }
+
+        .button-1:hover {
+            background-color: rgba(255, 255, 255, 0.5);
+            color: #000;
+            box-shadow: 0 0 2px 3px #fff;
+        }
+
         h2 {
             letter-spacing: 3px;
             color: darkorange;
@@ -287,7 +307,7 @@ header {
                     <a class="nav-link" href="#">Content</a>
                 </li>
                 <li class="nav-items">
-                    <a class="nav-link" href="#">Film</a>
+                    <a class="nav-link" href="film.php">Film</a>
                 </li>
                 <li class="nav-items">
                     <a class="nav-link" href="about.php">About</a>
@@ -305,8 +325,7 @@ header {
                         color:white; border-radius:10px;">Logout</a>';
                     } else {
                         // User is not logged in, show the Login/Signup button
-                        echo '<button style="background-color: black; color:white; height:50px; padding:10px; 
-						border-radius:10px;" type="button" data-toggle="modal" data-target="#authModal">Log In / Register</button>';
+                        echo '<button style="" class="button-1" type="button" data-toggle="modal" data-target="#authModal">Log In / Register</button>';
                     }
                     ?>
                 </li>
