@@ -3,7 +3,7 @@
 // Make sure to start the session.
 include_once("config1.php");
 include_once("config.php");
-include("header.php");
+
 include("backend_add_account.php");
 
 
@@ -249,7 +249,7 @@ if (isset($_SESSION['user_id']) && !empty($_SESSION['user_id'])) {
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">	
 	<title>Tara-Laro</title>
-	<link rel="stylesheet" href="css/bootstrap.min.css">
+
 	<link rel="Stylesheet" href="css/home.css">
 	<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -261,10 +261,20 @@ if (isset($_SESSION['user_id']) && !empty($_SESSION['user_id'])) {
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-<div class="container">
+    <?php
+include("header.php"); ?>
+
+
+<div class="container" style="padding:1% 10% 1% 10%;">
     <div class="row">
         <div class="col-md-12">
             <div class="embed-responsive embed-responsive-16by9">
+            <?php
+if (!isset($_SESSION['user_id']) || empty($_SESSION['user_id'])) {
+    // Display a modal for authentication if the user is not signed in
+    echo '<button id="playButton" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 1;" class="play-button" type="button" data-toggle="modal" data-target="#authModal"></button>';
+}
+?>
                 <video id="videoPlayer">
                     <source src="images/bath.mp4" type="video/mp4" class="video">
                 </video>
@@ -276,12 +286,7 @@ if (isset($_SESSION['user_id']) && !empty($_SESSION['user_id'])) {
 <br>
 <br>
 
-<?php
-if (!isset($_SESSION['user_id']) || empty($_SESSION['user_id'])) {
-    // Display a modal for authentication if the user is not signed in
-    echo '<button id="playButton" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 1;" class="play-button" type="button" data-toggle="modal" data-target="#authModal"></button>';
-}
-?>
+
 
 <!-- COMMENT FORM -->
 <form action="backend_add_comment.php" method="POST" name="frmAccountUpdate" enctype="multipart/form-data" autocomplete="off">
@@ -369,27 +374,6 @@ if (!isset($_SESSION['user_id']) || empty($_SESSION['user_id'])) {
 
 
 
-
-
-
-
-
-
-
-<!--
-<form action="backend_add_comment.php" method="POST" name="frmAccountUpdate" enctype="multipart/form-data" autocomplete="off">
-<input type="hidden" class="form-control" id="id" name="id" value="<?php echo $id; ?>">
-					    <h1 class="h3 mb-3 fw-normal">Post Comments</h1>
-						<input type="text" class="form-control" id="Name" name="Name" required value="<?php echo $name; ?>" readonly>
-					    <div class="mb-3">
-						    <textarea id="comment" name="comment" class="textComment" onkeyup="this.value=this.value.replace(/[^a-z A-Z0-9.!?,]/g, '')" required ></textarea>
-						</div>
-
-					   <button class="btn btn-lg btn-primary" type="submit">Submit Post</button>
-					
-					</div>
-	</form>
-    -->
 </div>
 </div>
 <!-- The modal -->
@@ -688,7 +672,7 @@ confirm_password.onkeyup = validatePassword;
 
 
 
-<div class="container">
+<div class="container" style="padding:1% 10% 1% 10%;">
         <h1 class="h3 mb-3 fw-normal">Comments</h1>
         <div class="comments">
             <?php

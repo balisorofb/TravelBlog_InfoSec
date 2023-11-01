@@ -38,6 +38,10 @@ session_start();
             margin-left: 7%;
         }
 
+        .navbar-brand{
+            background-color: transparent;
+        }
+
         ul {
             list-style-type: none;
             margin: 0;
@@ -78,7 +82,64 @@ session_start();
         .nav-items a:hover {
             transform: scale(1.1);
         }
-      
+        
+        .custom-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.custom-dropdown-trigger {
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.custom-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.custom-dropdown-content .profile {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    color: #333;
+}
+
+.custom-dropdown-content .profile:hover {
+    background-color: #ddd;
+}
+
+.custom-dropdown:hover .custom-dropdown-content {
+    display: block;
+}
+
+		.dropdown{
+			font-size:38px; color:white; text-align:right;
+		}
+		.btnLogout{
+			display: block; margin-left: auto; margin-right: auto; margin-top:10px;
+			width:100%;
+		}
+		.imgProfile{
+			width:40px; height:40px; border:1px solid white; border-radius:50%;
+		}
+		.profile{
+			width:200px; padding:5px; margin:5px;
+		}
+		.profileIMG{
+			width:100px; display: block; margin-left: auto; margin-right: auto; 
+		}
+		.profilename{
+			text-align:center; font-size:15px; margin-top:10px;
+		}
+
         main{
             max-width: 100%;
             background-color: #faf0e6;
@@ -302,8 +363,8 @@ header {
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light" >
-        <a class="navbar-brand" href="index.php" style="background-color:transparent; border:none;"><img src="images/logo-black.png" width="100%" style="background-color:transparent;"></a>
+<nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#"><img src="images/logo-black.png" width="100%"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -323,23 +384,51 @@ header {
                     <a class="nav-link" href="about.php">About</a>
                 </li>
                 <li class="nav-items">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="#contact">Contact</a>
                 </li>
             </ul>
-            <ul class="navbar-nav ml-auto" style="margin-right: 7%;"> <!-- Added ml-auto class here -->
-                <li class="nav-items">
-                    <?php
-                    if (isset($_SESSION['user_id']) && !empty($_SESSION['user_id'])) {
-                        // User is logged in, show the Logout button
-                        echo '<a class="nav-link" type="button" href="logout.php" style="background-color: black;
-                        color:white; border-radius:10px;">Logout</a>';
-                    } else {
-                        // User is not logged in, show the Login/Signup button
-                        echo '<a style="color: red;" class="button-1" type="button" data-toggle="modal" data-target="#authModal">Log In / Register</a>';
-                    }
-                    ?>
-                </li>
-            </ul>
+            
+            <ul class="navbar-nav ml-auto" style="margin-right: 10%;"> <!-- Added ml-auto class here -->
+            <li class="nav-items">
+                
+            
+
+            
+            <?php
+if (isset($_SESSION['user_id']) && !empty($_SESSION['user_id'])) {
+    // User is logged in, show the profile dropdown menu
+    ?>
+    <div class="custom-dropdown">
+        <div class="custom-dropdown-trigger" style="background-color:transparent;">
+        <?php
+                $select_profile = $conn->prepare("SELECT * FROM `tblaccounts` WHERE ID = ?");
+                $select_profile->execute([$_SESSION['user_id']]);
+                $fetch_profile = $select_profile->fetch(PDO::FETCH_ASSOC);
+                ?>
+            <img src="uploaded_img/<?= $fetch_profile['Image']; ?> " alt="" class="imgProfile"><span>▼</span>
+        </div>
+        <div class="custom-dropdown-content">
+            <div class="profile">
+                <?php
+                $select_profile = $conn->prepare("SELECT * FROM `tblaccounts` WHERE ID = ?");
+                $select_profile->execute([$_SESSION['user_id']]);
+                $fetch_profile = $select_profile->fetch(PDO::FETCH_ASSOC);
+                ?>
+                <img src="uploaded_img/<?= $fetch_profile['Image']; ?>" alt="" class="profileIMG">
+                <p class="profilename"><?= $fetch_profile['Name']; ?></p>
+                <a href="logout.php" class="btn btn-danger btnLogout"><i class='fas fa-sign-out-alt'></i> Log out</a>
+            </div>
+        </div>
+    </div>
+    <?php
+} else {
+    // User is not logged in, show the Login/Signup button
+    echo '<a style="" class="button-1" type="button" data-toggle="modal" data-target="#authModal">Log In / Register</a>';
+}
+?>
+            </li>
+        </ul>
+        
         </div>
     </nav>
 
