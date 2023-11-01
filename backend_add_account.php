@@ -2,7 +2,7 @@
 include 'config.php';
 include_once('crypto.php');
 include_once("error.php");
-
+session_start();
 if(isset($_POST['submit'])){
 
    $name = $_POST['name'];
@@ -15,9 +15,8 @@ if(isset($_POST['submit'])){
    $cpass = filter_var($cpass, FILTER_SANITIZE_STRING);
    $user = filter_var('user');
    $accCreated = date("Y-m-d");
-   $email = encryptData($email);
-
    
+   $email = encryptData($email);
    $image = $_FILES['image']['name'];
    $image = filter_var($image, FILTER_SANITIZE_STRING);
    $image_size = $_FILES['image']['size'];

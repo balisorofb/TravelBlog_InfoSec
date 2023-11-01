@@ -2,9 +2,9 @@
 
 @include 'config.php';
 @include 'config1.php';
-include("backend_add_account.php");
 
-session_start();
+include 'backend_add_account.php';
+
 
 
 ?>
@@ -613,7 +613,7 @@ if (isset($_SESSION['user_id']) && !empty($_SESSION['user_id'])) {
 }
 
 ?>
-    <form action="backend_add_account.php" method="POST" class="mx-1 mx-md-4">
+   <form action="" method="POST" name="frmAccountRegistration" enctype="multipart/form-data" autocomplete="off">
 <br>
 <div class="d-flex flex-row align-items-center mb-4">
   <i class="fas fa-user fa-lg me-3 fa-fw"></i>
