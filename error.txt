@@ -415,3 +415,52 @@ Stack trace:
 [01-Nov-2023 18:57:35 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\TravelBlog_InfoSec\index.php on line 426
 [01-Nov-2023 18:57:35 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\TravelBlog_InfoSec\index.php on line 427
 [01-Nov-2023 18:57:55 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in C:\xampp\htdocs\TravelBlog_InfoSec\index.php on line 605
+[01-Nov-2023 19:04:31 Europe/Berlin] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\TravelBlog_InfoSec\header.php on line 7
+[01-Nov-2023 19:04:31 Europe/Berlin] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 5
+[01-Nov-2023 19:04:31 Europe/Berlin] PHP Warning:  Undefined variable $id in C:\xampp\htdocs\TravelBlog_InfoSec\film.php on line 347
+[01-Nov-2023 19:04:31 Europe/Berlin] PHP Warning:  Undefined variable $name in C:\xampp\htdocs\TravelBlog_InfoSec\film.php on line 349
+[01-Nov-2023 19:04:35 Europe/Berlin] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\TravelBlog_InfoSec\header.php on line 7
+[01-Nov-2023 19:04:35 Europe/Berlin] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 5
+[01-Nov-2023 19:04:35 Europe/Berlin] PHP Warning:  Undefined variable $user_name in C:\xampp\htdocs\TravelBlog_InfoSec\film.php on line 261
+[01-Nov-2023 19:04:35 Europe/Berlin] PHP Warning:  Undefined variable $id in C:\xampp\htdocs\TravelBlog_InfoSec\film.php on line 347
+[01-Nov-2023 19:04:35 Europe/Berlin] PHP Warning:  Undefined variable $name in C:\xampp\htdocs\TravelBlog_InfoSec\film.php on line 349
+[01-Nov-2023 19:07:08 Europe/Berlin] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\TravelBlog_InfoSec\header.php on line 7
+[01-Nov-2023 19:07:08 Europe/Berlin] PHP Warning:  Undefined variable $user_name in C:\xampp\htdocs\TravelBlog_InfoSec\film.php on line 285
+[01-Nov-2023 19:07:08 Europe/Berlin] PHP Warning:  Undefined variable $id in C:\xampp\htdocs\TravelBlog_InfoSec\film.php on line 372
+[01-Nov-2023 19:07:08 Europe/Berlin] PHP Warning:  Undefined variable $name in C:\xampp\htdocs\TravelBlog_InfoSec\film.php on line 374
+[01-Nov-2023 19:07:19 Europe/Berlin] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\TravelBlog_InfoSec\header.php on line 7
+[01-Nov-2023 19:07:19 Europe/Berlin] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\TravelBlog_InfoSec\header.php on line 7
+[01-Nov-2023 19:07:19 Europe/Berlin] PHP Warning:  Undefined variable $id in C:\xampp\htdocs\TravelBlog_InfoSec\film.php on line 372
+[01-Nov-2023 19:07:19 Europe/Berlin] PHP Warning:  Undefined variable $name in C:\xampp\htdocs\TravelBlog_InfoSec\film.php on line 374
+[01-Nov-2023 19:08:25 Europe/Berlin] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\TravelBlog_InfoSec\header.php on line 7
+[01-Nov-2023 19:08:25 Europe/Berlin] PHP Warning:  Undefined variable $id in C:\xampp\htdocs\TravelBlog_InfoSec\film.php on line 372
+[01-Nov-2023 19:08:25 Europe/Berlin] PHP Warning:  Undefined variable $name in C:\xampp\htdocs\TravelBlog_InfoSec\film.php on line 374
+[01-Nov-2023 19:08:32 Europe/Berlin] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\TravelBlog_InfoSec\header.php on line 7
+[01-Nov-2023 19:08:32 Europe/Berlin] PHP Warning:  Undefined variable $id in C:\xampp\htdocs\TravelBlog_InfoSec\film.php on line 372
+[01-Nov-2023 19:08:32 Europe/Berlin] PHP Warning:  Undefined variable $name in C:\xampp\htdocs\TravelBlog_InfoSec\film.php on line 374
+[01-Nov-2023 19:12:57 Europe/Berlin] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\TravelBlog_InfoSec\header.php on line 7
+[01-Nov-2023 19:12:57 Europe/Berlin] PHP Warning:  Undefined variable $id in C:\xampp\htdocs\TravelBlog_InfoSec\film.php on line 379
+[01-Nov-2023 19:12:57 Europe/Berlin] PHP Warning:  Undefined variable $name in C:\xampp\htdocs\TravelBlog_InfoSec\film.php on line 381
+[01-Nov-2023 19:15:45 Europe/Berlin] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\TravelBlog_InfoSec\header.php on line 7
+[01-Nov-2023 19:15:45 Europe/Berlin] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 5
+[01-Nov-2023 19:15:45 Europe/Berlin] PHP Warning:  Undefined variable $user_name in C:\xampp\htdocs\TravelBlog_InfoSec\film.php on line 261
+[01-Nov-2023 19:15:45 Europe/Berlin] PHP Warning:  Undefined variable $id in C:\xampp\htdocs\TravelBlog_InfoSec\film.php on line 347
+[01-Nov-2023 19:15:45 Europe/Berlin] PHP Warning:  Undefined variable $name in C:\xampp\htdocs\TravelBlog_InfoSec\film.php on line 349
+[01-Nov-2023 19:19:22 Europe/Berlin] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\TravelBlog_InfoSec\header.php on line 7
+[01-Nov-2023 19:19:22 Europe/Berlin] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 5
+[01-Nov-2023 19:19:22 Europe/Berlin] PHP Warning:  Undefined variable $user_name in C:\xampp\htdocs\TravelBlog_InfoSec\film.php on line 289
+[01-Nov-2023 19:19:22 Europe/Berlin] PHP Warning:  Undefined variable $id in C:\xampp\htdocs\TravelBlog_InfoSec\film.php on line 381
+[01-Nov-2023 19:19:22 Europe/Berlin] PHP Warning:  Undefined variable $name in C:\xampp\htdocs\TravelBlog_InfoSec\film.php on line 383
+[01-Nov-2023 19:19:41 Europe/Berlin] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\TravelBlog_InfoSec\header.php on line 7
+[01-Nov-2023 19:19:41 Europe/Berlin] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 5
+[01-Nov-2023 19:19:41 Europe/Berlin] PHP Warning:  Undefined variable $id in C:\xampp\htdocs\TravelBlog_InfoSec\film.php on line 381
+[01-Nov-2023 19:19:41 Europe/Berlin] PHP Warning:  Undefined variable $name in C:\xampp\htdocs\TravelBlog_InfoSec\film.php on line 383
+[01-Nov-2023 19:20:21 Europe/Berlin] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\TravelBlog_InfoSec\header.php on line 7
+[01-Nov-2023 19:20:21 Europe/Berlin] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 5
+[01-Nov-2023 19:20:21 Europe/Berlin] PHP Warning:  Undefined variable $id in C:\xampp\htdocs\TravelBlog_InfoSec\film.php on line 381
+[01-Nov-2023 19:20:21 Europe/Berlin] PHP Warning:  Undefined variable $name in C:\xampp\htdocs\TravelBlog_InfoSec\film.php on line 383
+[01-Nov-2023 19:20:42 Europe/Berlin] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\TravelBlog_InfoSec\header.php on line 7
+[01-Nov-2023 19:20:42 Europe/Berlin] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 5
+[01-Nov-2023 19:20:42 Europe/Berlin] PHP Warning:  Undefined variable $user_name in C:\xampp\htdocs\TravelBlog_InfoSec\film.php on line 289
+[01-Nov-2023 19:20:42 Europe/Berlin] PHP Warning:  Undefined variable $id in C:\xampp\htdocs\TravelBlog_InfoSec\film.php on line 381
+[01-Nov-2023 19:20:42 Europe/Berlin] PHP Warning:  Undefined variable $name in C:\xampp\htdocs\TravelBlog_InfoSec\film.php on line 383
