@@ -1,6 +1,7 @@
 <?php
 @include 'config.php';
 include_once("crypto.php");
+include("backend_add_account.php");
 
 
 session_start();
@@ -143,24 +144,33 @@ session_start();
             box-shadow: 0 0 2px 3px #fff;
         }
 
-        .button-1 {
-            background: rgb(195,34,56);
-background: linear-gradient(0deg, rgba(195,34,56,1) 0%, rgba(193,181,41,1) 38%, rgba(206,119,42,1) 61%, rgba(253,121,45,1) 100%);
-            color: black;
-            padding: 10px;
-            margin-top: 2rem;
-            border-radius: 6px;
-            font-size: 1.2rem;
-            cursor: pointer;
-            border: none;
+        .button-1{
+            text-decoration: none;
             font-weight: 600;
-            transition: all 0.6s ease;
+            color: red;
+            transition: transform 0.2s;
+        }
+
+        .button-1:hover::before {
+            content: '';
+            width: 100%;
+            height: 4px;
+            background-image: linear-gradient(90deg, #91228f, #ed1621, #feee03, #2b2e90);
+            background-size: 400% 100%;
+            background-position: 100%;
+            background-repeat: no-repeat;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            transition: background-position 0.3s;
+        }
+
+        .button-1:hover::before {
+            background-position: 0;
         }
 
         .button-1:hover {
-            background-color: rgba(255, 255, 255, 0.5);
-            color: #000;
-            box-shadow: 0 0 2px 3px #fff;
+            transform: scale(1.1);
         }
 
         h2 {
@@ -293,7 +303,7 @@ header {
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light" >
-        <a class="navbar-brand" href="#" style="background-color:transparent; border:none;"><img src="images/logo-black.png" width="100%" style="background-color:transparent;"></a>
+        <a class="navbar-brand" href="index.php" style="background-color:transparent; border:none;"><img src="images/logo-black.png" width="100%" style="background-color:transparent;"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -325,7 +335,7 @@ header {
                         color:white; border-radius:10px;">Logout</a>';
                     } else {
                         // User is not logged in, show the Login/Signup button
-                        echo '<button style="" class="button-1" type="button" data-toggle="modal" data-target="#authModal">Log In / Register</button>';
+                        echo '<a style="color: red;" class="button-1" type="button" data-toggle="modal" data-target="#authModal">Log In / Register</a>';
                     }
                     ?>
                 </li>

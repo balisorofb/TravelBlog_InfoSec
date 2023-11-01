@@ -4,20 +4,9 @@
 
 include_once("crypto.php");
 session_start();
-checkSessionTimeout($session_timeout);
 
-$session_timeout = 600; // 10 minutes (10 minutes * 60 seconds)
-$errorMessage = "incorrect email or password!";
-$_SESSION['last_activity'] = time();
-function checkSessionTimeout($session_timeout) {
-    if (isset($_SESSION['last_activity']) && (time() - $_SESSION['last_activity'] > $session_timeout)) {
-        // Session has expired
-        session_unset(); // Unset all session values
-        session_destroy(); // Destroy the session data
-        header('Location: index.php'); // Redirect to the login page or another appropriate page
-        exit;
-    }
-}
+
+
 
 
 if(isset($_POST['submit'])){
@@ -61,6 +50,7 @@ if(isset($_POST['submit'])){
    }else{
     $message[] = 'incorrect email or password!';
     echo '<script>alert("' . $errorMessage . '");</script>';
+    header('location:index.php');
      
    }
 

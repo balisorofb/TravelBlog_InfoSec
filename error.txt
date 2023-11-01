@@ -220,3 +220,158 @@ Stack trace:
 [27-Oct-2023 04:00:49 Europe/Berlin] PHP Warning:  Undefined array key "admin_id" in C:\xampp\htdocs\TravelBlog_InfoSec\ui_manage_account.php on line 9
 [27-Oct-2023 04:07:45 Europe/Berlin] PHP Warning:  Undefined array key "admin_id" in C:\xampp\htdocs\TravelBlog_InfoSec\ui_manage_account.php on line 9
 [27-Oct-2023 07:49:28 Europe/Berlin] PHP Warning:  Undefined array key "admin_id" in C:\xampp\htdocs\TravelBlog_InfoSec\ui_manage_account.php on line 9
+[31-Oct-2023 16:06:46 Europe/Berlin] PHP Warning:  Undefined array key "image" in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 20
+[31-Oct-2023 16:06:46 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 20
+[31-Oct-2023 16:06:46 Europe/Berlin] PHP Warning:  Undefined array key "image" in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 22
+[31-Oct-2023 16:06:46 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 22
+[31-Oct-2023 16:06:46 Europe/Berlin] PHP Warning:  Undefined array key "image" in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 23
+[31-Oct-2023 16:06:46 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 23
+[31-Oct-2023 16:09:42 Europe/Berlin] PHP Warning:  Undefined array key "image" in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 20
+[31-Oct-2023 16:09:42 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 20
+[31-Oct-2023 16:09:42 Europe/Berlin] PHP Warning:  Undefined array key "image" in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 22
+[31-Oct-2023 16:09:42 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 22
+[31-Oct-2023 16:09:42 Europe/Berlin] PHP Warning:  Undefined array key "image" in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 23
+[31-Oct-2023 16:09:42 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 23
+[31-Oct-2023 16:37:05 Europe/Berlin] PHP Warning:  Undefined array key "image" in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 20
+[31-Oct-2023 16:37:05 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 20
+[31-Oct-2023 16:37:05 Europe/Berlin] PHP Warning:  Undefined array key "image" in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 22
+[31-Oct-2023 16:37:05 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 22
+[31-Oct-2023 16:37:05 Europe/Berlin] PHP Warning:  Undefined array key "image" in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 23
+[31-Oct-2023 16:37:05 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 23
+[31-Oct-2023 17:46:41 Europe/Berlin] PHP Warning:  Undefined array key "image" in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 20
+[31-Oct-2023 17:46:41 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 20
+[31-Oct-2023 17:46:41 Europe/Berlin] PHP Warning:  Undefined array key "image" in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 22
+[31-Oct-2023 17:46:41 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 22
+[31-Oct-2023 17:46:41 Europe/Berlin] PHP Warning:  Undefined array key "image" in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 23
+[31-Oct-2023 17:46:41 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 23
+[31-Oct-2023 17:55:01 Europe/Berlin] PHP Warning:  Undefined array key "image" in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 20
+[31-Oct-2023 17:55:01 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 20
+[31-Oct-2023 17:55:01 Europe/Berlin] PHP Warning:  Undefined array key "image" in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 22
+[31-Oct-2023 17:55:01 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 22
+[31-Oct-2023 17:55:01 Europe/Berlin] PHP Warning:  Undefined array key "image" in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 23
+[31-Oct-2023 17:55:01 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 23
+[31-Oct-2023 18:19:56 Europe/Berlin] PHP Warning:  Undefined array key "image" in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 20
+[31-Oct-2023 18:19:56 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 20
+[31-Oct-2023 18:19:56 Europe/Berlin] PHP Warning:  Undefined array key "image" in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 22
+[31-Oct-2023 18:19:56 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 22
+[31-Oct-2023 18:19:56 Europe/Berlin] PHP Warning:  Undefined array key "image" in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 23
+[31-Oct-2023 18:19:56 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 23
+[31-Oct-2023 18:29:11 Europe/Berlin] PHP Warning:  Undefined array key "image" in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 20
+[31-Oct-2023 18:29:11 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 20
+[31-Oct-2023 18:29:11 Europe/Berlin] PHP Warning:  Undefined array key "image" in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 21
+[31-Oct-2023 18:29:11 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 21
+[31-Oct-2023 18:29:11 Europe/Berlin] PHP Warning:  Undefined array key "image" in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 22
+[31-Oct-2023 18:29:11 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 22
+[31-Oct-2023 18:29:11 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'Image' cannot be null in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php:33
+Stack trace:
+#0 C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php(33): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 33
+[01-Nov-2023 12:47:13 Europe/Berlin] PHP Warning:  Undefined array key "image" in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 20
+[01-Nov-2023 12:47:13 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 20
+[01-Nov-2023 12:47:13 Europe/Berlin] PHP Warning:  Undefined array key "image" in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 22
+[01-Nov-2023 12:47:13 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 22
+[01-Nov-2023 12:47:13 Europe/Berlin] PHP Warning:  Undefined array key "image" in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 23
+[01-Nov-2023 12:47:13 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 23
+[01-Nov-2023 12:49:05 Europe/Berlin] PHP Warning:  Undefined array key "image" in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 20
+[01-Nov-2023 12:49:05 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 20
+[01-Nov-2023 12:49:05 Europe/Berlin] PHP Warning:  Undefined array key "image" in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 22
+[01-Nov-2023 12:49:05 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 22
+[01-Nov-2023 12:49:05 Europe/Berlin] PHP Warning:  Undefined array key "image" in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 23
+[01-Nov-2023 12:49:05 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 23
+[01-Nov-2023 12:55:56 Europe/Berlin] PHP Warning:  Undefined array key "image" in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 20
+[01-Nov-2023 12:55:56 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 20
+[01-Nov-2023 12:55:56 Europe/Berlin] PHP Warning:  Undefined array key "image" in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 22
+[01-Nov-2023 12:55:56 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 22
+[01-Nov-2023 12:55:56 Europe/Berlin] PHP Warning:  Undefined array key "image" in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 23
+[01-Nov-2023 12:55:56 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 23
+[01-Nov-2023 12:59:32 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\TravelBlog_InfoSec\index.php on line 491
+[01-Nov-2023 12:59:32 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\TravelBlog_InfoSec\index.php on line 491
+[01-Nov-2023 13:00:23 Europe/Berlin] PHP Warning:  Undefined array key "image" in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 20
+[01-Nov-2023 13:00:23 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 20
+[01-Nov-2023 13:00:23 Europe/Berlin] PHP Warning:  Undefined array key "image" in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 22
+[01-Nov-2023 13:00:23 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 22
+[01-Nov-2023 13:00:23 Europe/Berlin] PHP Warning:  Undefined array key "image" in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 23
+[01-Nov-2023 13:00:23 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 23
+[01-Nov-2023 13:00:23 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\TravelBlog_InfoSec\index.php on line 491
+[01-Nov-2023 13:00:23 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\TravelBlog_InfoSec\index.php on line 491
+[01-Nov-2023 13:03:17 Europe/Berlin] PHP Warning:  Undefined array key "image" in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 20
+[01-Nov-2023 13:03:17 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 20
+[01-Nov-2023 13:03:17 Europe/Berlin] PHP Warning:  Undefined array key "image" in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 22
+[01-Nov-2023 13:03:17 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 22
+[01-Nov-2023 13:03:17 Europe/Berlin] PHP Warning:  Undefined array key "image" in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 23
+[01-Nov-2023 13:03:17 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 23
+[01-Nov-2023 13:03:17 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\TravelBlog_InfoSec\index.php on line 491
+[01-Nov-2023 13:03:17 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\TravelBlog_InfoSec\index.php on line 491
+[01-Nov-2023 13:06:31 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\TravelBlog_InfoSec\index.php on line 492
+[01-Nov-2023 13:06:31 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\TravelBlog_InfoSec\index.php on line 492
+[01-Nov-2023 13:06:31 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\TravelBlog_InfoSec\index.php on line 492
+[01-Nov-2023 13:06:31 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\TravelBlog_InfoSec\index.php on line 492
+[01-Nov-2023 13:06:57 Europe/Berlin] PHP Warning:  Undefined array key "image" in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 20
+[01-Nov-2023 13:06:57 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 20
+[01-Nov-2023 13:06:57 Europe/Berlin] PHP Warning:  Undefined array key "image" in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 22
+[01-Nov-2023 13:06:57 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 22
+[01-Nov-2023 13:06:57 Europe/Berlin] PHP Warning:  Undefined array key "image" in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 23
+[01-Nov-2023 13:06:57 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 23
+[01-Nov-2023 13:06:57 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\TravelBlog_InfoSec\index.php on line 492
+[01-Nov-2023 13:06:57 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\TravelBlog_InfoSec\index.php on line 492
+[01-Nov-2023 13:07:53 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\TravelBlog_InfoSec\index.php on line 492
+[01-Nov-2023 13:07:53 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\TravelBlog_InfoSec\index.php on line 492
+[01-Nov-2023 13:08:20 Europe/Berlin] PHP Warning:  Undefined array key "image" in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 20
+[01-Nov-2023 13:08:20 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 20
+[01-Nov-2023 13:08:20 Europe/Berlin] PHP Warning:  Undefined array key "image" in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 22
+[01-Nov-2023 13:08:20 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 22
+[01-Nov-2023 13:08:20 Europe/Berlin] PHP Warning:  Undefined array key "image" in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 23
+[01-Nov-2023 13:08:20 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 23
+[01-Nov-2023 13:08:20 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\TravelBlog_InfoSec\index.php on line 492
+[01-Nov-2023 13:08:20 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\TravelBlog_InfoSec\index.php on line 492
+[01-Nov-2023 13:10:43 Europe/Berlin] PHP Warning:  Undefined variable $id in C:\xampp\htdocs\TravelBlog_InfoSec\film.php on line 344
+[01-Nov-2023 13:10:43 Europe/Berlin] PHP Warning:  Undefined variable $name in C:\xampp\htdocs\TravelBlog_InfoSec\film.php on line 346
+[01-Nov-2023 13:10:46 Europe/Berlin] PHP Warning:  Undefined variable $id in C:\xampp\htdocs\TravelBlog_InfoSec\film.php on line 344
+[01-Nov-2023 13:10:46 Europe/Berlin] PHP Warning:  Undefined variable $name in C:\xampp\htdocs\TravelBlog_InfoSec\film.php on line 346
+[01-Nov-2023 13:12:19 Europe/Berlin] PHP Warning:  Undefined variable $id in C:\xampp\htdocs\TravelBlog_InfoSec\film.php on line 344
+[01-Nov-2023 13:12:19 Europe/Berlin] PHP Warning:  Undefined variable $name in C:\xampp\htdocs\TravelBlog_InfoSec\film.php on line 346
+[01-Nov-2023 13:12:35 Europe/Berlin] PHP Warning:  Undefined variable $id in C:\xampp\htdocs\TravelBlog_InfoSec\film.php on line 344
+[01-Nov-2023 13:12:35 Europe/Berlin] PHP Warning:  Undefined variable $name in C:\xampp\htdocs\TravelBlog_InfoSec\film.php on line 346
+[01-Nov-2023 13:12:43 Europe/Berlin] PHP Warning:  Undefined variable $id in C:\xampp\htdocs\TravelBlog_InfoSec\film.php on line 344
+[01-Nov-2023 13:12:43 Europe/Berlin] PHP Warning:  Undefined variable $name in C:\xampp\htdocs\TravelBlog_InfoSec\film.php on line 346
+[01-Nov-2023 13:13:18 Europe/Berlin] PHP Warning:  Undefined variable $id in C:\xampp\htdocs\TravelBlog_InfoSec\film.php on line 344
+[01-Nov-2023 13:13:18 Europe/Berlin] PHP Warning:  Undefined variable $name in C:\xampp\htdocs\TravelBlog_InfoSec\film.php on line 346
+[01-Nov-2023 13:13:46 Europe/Berlin] PHP Warning:  Undefined variable $id in C:\xampp\htdocs\TravelBlog_InfoSec\film.php on line 347
+[01-Nov-2023 13:13:46 Europe/Berlin] PHP Warning:  Undefined variable $name in C:\xampp\htdocs\TravelBlog_InfoSec\film.php on line 349
+[01-Nov-2023 13:14:39 Europe/Berlin] PHP Warning:  Undefined array key "image" in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 20
+[01-Nov-2023 13:14:39 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 20
+[01-Nov-2023 13:14:39 Europe/Berlin] PHP Warning:  Undefined array key "image" in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 22
+[01-Nov-2023 13:14:39 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 22
+[01-Nov-2023 13:14:39 Europe/Berlin] PHP Warning:  Undefined array key "image" in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 23
+[01-Nov-2023 13:14:39 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 23
+[01-Nov-2023 13:26:18 Europe/Berlin] PHP Warning:  Undefined array key "image" in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 21
+[01-Nov-2023 13:26:18 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 21
+[01-Nov-2023 13:26:18 Europe/Berlin] PHP Warning:  Undefined array key "image" in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 23
+[01-Nov-2023 13:26:18 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 23
+[01-Nov-2023 13:26:18 Europe/Berlin] PHP Warning:  Undefined array key "image" in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 24
+[01-Nov-2023 13:26:18 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 24
+[01-Nov-2023 13:28:03 Europe/Berlin] PHP Warning:  Undefined array key "image" in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 21
+[01-Nov-2023 13:28:03 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 21
+[01-Nov-2023 13:28:03 Europe/Berlin] PHP Warning:  Undefined array key "image" in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 23
+[01-Nov-2023 13:28:03 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 23
+[01-Nov-2023 13:28:03 Europe/Berlin] PHP Warning:  Undefined array key "image" in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 24
+[01-Nov-2023 13:28:03 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 24
+[01-Nov-2023 13:35:08 Europe/Berlin] PHP Warning:  Undefined array key "image" in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 21
+[01-Nov-2023 13:35:08 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 21
+[01-Nov-2023 13:35:08 Europe/Berlin] PHP Warning:  Undefined array key "image" in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 23
+[01-Nov-2023 13:35:08 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 23
+[01-Nov-2023 13:35:08 Europe/Berlin] PHP Warning:  Undefined array key "image" in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 24
+[01-Nov-2023 13:35:08 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 24
+[01-Nov-2023 13:36:20 Europe/Berlin] PHP Warning:  Undefined array key "image" in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 21
+[01-Nov-2023 13:36:20 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 21
+[01-Nov-2023 13:36:20 Europe/Berlin] PHP Warning:  Undefined array key "image" in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 23
+[01-Nov-2023 13:36:20 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 23
+[01-Nov-2023 13:36:20 Europe/Berlin] PHP Warning:  Undefined array key "image" in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 24
+[01-Nov-2023 13:36:20 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 24
+[01-Nov-2023 13:38:49 Europe/Berlin] PHP Warning:  Undefined array key "image" in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 21
+[01-Nov-2023 13:38:49 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 21
+[01-Nov-2023 13:38:49 Europe/Berlin] PHP Warning:  Undefined array key "image" in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 23
+[01-Nov-2023 13:38:49 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 23
+[01-Nov-2023 13:38:49 Europe/Berlin] PHP Warning:  Undefined array key "image" in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 24
+[01-Nov-2023 13:38:49 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\TravelBlog_InfoSec\backend_add_account.php on line 24

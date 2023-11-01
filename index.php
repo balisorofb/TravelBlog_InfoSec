@@ -1,6 +1,8 @@
 <?php
 
 @include 'config.php';
+@include 'config1.php';
+include("backend_add_account.php");
 
 session_start();
 
@@ -18,8 +20,7 @@ session_start();
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <style>
         * {
-            margin: 0;
-            padding: 0;
+           
             font-family: 'Roboto', sans-serif;
         }
 
@@ -203,6 +204,7 @@ session_start();
             border: none;
             font-weight: 600;
             transition: all 0.6s ease;
+            text-decoration: underline;
         }
 
         .button:hover {
@@ -211,23 +213,32 @@ session_start();
             box-shadow: 0 0 2px 3px #fff;
         }
         .button-1 {
-            background: rgb(195,34,56);
-background: linear-gradient(0deg, rgba(195,34,56,1) 0%, rgba(193,181,41,1) 38%, rgba(206,119,42,1) 61%, rgba(253,121,45,1) 100%);
-            color: black;
-            padding: 10px;
-            margin-top: 2rem;
-            border-radius: 6px;
-            font-size: 1.2rem;
-            cursor: pointer;
-            border: none;
+          text-decoration: underline;
             font-weight: 600;
-            transition: all 0.6s ease;
+            color: #fff;
+            transition: transform 0.2s;
         }
 
-        .button-1:hover {
-            background-color: rgba(255, 255, 255, 0.5);
-            color: #000;
-            box-shadow: 0 0 2px 3px #fff;
+        .button-1:hover::before {
+            content: '';
+            width: 100%;
+            height: 4px;
+            background-image: linear-gradient(90deg, #91228f, #ed1621, #feee03, #2b2e90);
+            background-size: 400% 100%;
+            background-position: 100%;
+            background-repeat: no-repeat;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            transition: background-position 0.3s;
+        }
+
+        .button-1:hover::before {
+            background-position: 0;
+        }
+
+        .button-1 a:hover {
+            transform: scale(1.1);
         }
 
         h2 {
@@ -382,11 +393,11 @@ background: linear-gradient(0deg, rgba(195,34,56,1) 0%, rgba(193,181,41,1) 38%, 
                     <a class="nav-link" href="about.php">About</a>
                 </li>
                 <li class="nav-items">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="#contact">Contact</a>
                 </li>
             </ul>
-            </ul>
-            <ul class="navbar-nav ml-auto" style="margin-right: 7%;"> <!-- Added ml-auto class here -->
+            
+            <ul class="navbar-nav ml-auto" style="margin-right: 8%;"> <!-- Added ml-auto class here -->
             <li class="nav-items">
                 
             
@@ -403,7 +414,7 @@ if (isset($_SESSION['user_id']) && !empty($_SESSION['user_id'])) {
                 $select_profile->execute([$_SESSION['user_id']]);
                 $fetch_profile = $select_profile->fetch(PDO::FETCH_ASSOC);
                 ?>
-            <img src="uploaded_img/<?= $fetch_profile['Image']; ?>" alt="" class="imgProfile">
+            <img src="uploaded_img/<?= $fetch_profile['Image']; ?> " alt="" class="imgProfile"><span>▼</span>
         </div>
         <div class="custom-dropdown-content">
             <div class="profile">
@@ -421,18 +432,20 @@ if (isset($_SESSION['user_id']) && !empty($_SESSION['user_id'])) {
     <?php
 } else {
     // User is not logged in, show the Login/Signup button
-    echo '<button style="" class="button-1" type="button" data-toggle="modal" data-target="#authModal">Log In / Register</button>';
+    echo '<a style="" class="button-1" type="button" data-toggle="modal" data-target="#authModal">Log In / Register</a>';
 }
 ?>
             </li>
         </ul>
+        
         </div>
     </nav>
 
     <div class="container" style="padding-bottom:50px;">
         <div class="content">
             <h2>TARA <span style="color: #fff;">LARO:</span> <br> <span style="font-size:70% ; color:black;">A 3D Animation Showcasing <br> Filipino Traditional Games </span></h2>
-            <p>Let us preserve and recognize our cultural heritage with this 3D Animated Film <br> that showcases some of our Filipino Traditional Games.</p>
+            <p>We invite you to embark on a journey through time, culture, and play. Our mission is to reignite <br>
+             the spirit of Filipino heritage by bringing to life the traditional games that have been passed down through generations.</p>
             <button class="button">Watch</button>
         </div>
     </div>
@@ -600,7 +613,7 @@ if (isset($_SESSION['user_id']) && !empty($_SESSION['user_id'])) {
 }
 
 ?>
-                    <form action="backend_add_account.php" method="post" class="mx-1 mx-md-4">
+    <form action="backend_add_account.php" method="POST" class="mx-1 mx-md-4">
 <br>
 <div class="d-flex flex-row align-items-center mb-4">
   <i class="fas fa-user fa-lg me-3 fa-fw"></i>
@@ -706,12 +719,12 @@ confirm_password.onkeyup = validatePassword;
 </script>
 
 
-
+<div id="contact">
 <?php
 include 'footer.php';
 ?>
 
-
+</div>
 
     <!-- Bootstrap and jQuery scripts -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
