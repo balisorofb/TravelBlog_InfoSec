@@ -96,7 +96,7 @@ if(isset($_POST['submit'])){
 				<img src="images/tara-laro1.png" class="blackLogo">
 			</div>
 			<div class="row explore"  >
-				<a href="index.php"class="explorebtn" style="background-color:white; color:black; font-family:'Poppins', sans-serif" >EXPLORE </a>
+				<a href="index1.php"class="explorebtn" style="background-color:white; color:black; font-family:'Poppins', sans-serif" >EXPLORE </a>
 			</div>
 
 		</div>

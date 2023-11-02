@@ -4,15 +4,15 @@
 
 session_start();
 
-$admin_id = $_SESSION['admin_id'];
+$user_id = $_SESSION['admin_id'];
 
-if(!isset($admin_id)){
-   header('location:ui_login.php');
+if(!isset($user_id)){
+  header('location:access_denied.php');
 };
 
-
-
 ?>
+
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -46,7 +46,7 @@ body {
 <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
     <div class="container-fluid">
       <a class="" href="#">
-        <img src="images/whiteLogo.png" alt="Logo" width="200"/>
+        <img src="images/logo-black.png" alt="Logo" width="200"/>
       </a>
         <div class="navigation" >
           <a class="button logoutbtn" href="logout.php">
