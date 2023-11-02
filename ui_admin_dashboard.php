@@ -28,6 +28,55 @@ body {
   background-color: var(--veryLightGray); 
 }
 
+.containerrate {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .rating-container {
+            width: 70%; /* Set the width to your desired value (e.g., 80%) */
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .rating-header {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .rating-label {
+            font-size: 16px;
+        }
+
+        .rating-bar {
+       
+            height: 20px;
+            display: flex;
+            align-items: center;
+            border: 1px solid #ddd;
+            margin: 5px 0;
+            border-radius: 10px;
+        }
+        .rating-bar1 {
+            background-color: pink;
+            height: 20px;
+            display: flex;
+            align-items: center;
+            border: 1px solid #ddd;
+            margin: 5px 0;
+            border-radius: 10px;
+        }
+        .bar-fill {
+            background-color: blue;
+            height: 100%;
+            border-radius: 10px;
+        }
 </style>
 
 	<meta charset="utf-8">
@@ -143,12 +192,71 @@ body {
   </main>
 
 
-    <div class="chartContainer">
-      <div class="chart">
-        <canvas id="barchart" width="850" height="400"></canvas>
-      </div>
+     
+<<div class="containerrate">
+    <div class="rating-container">
+        <div class="rating-header">Ratings Distribution</div>
+        <div class="rating-label">Average Rating:</div>
+        <div class="rating-bar">
+            <div class="bar-fill" id="average-rating-bar" style="width: 0%;"></div>
+        </div>
+        <div class="rating-label"><span id="average-rating">0.00</span> ★★★★★ Average Rating</div>
+        <div class="rating-label">Ratings Distribution:</div>
+        <div id="rating-distribution"></div>
     </div>
-  
+
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // Sample data for rating distribution
+        const ratingsData = [3, 5, 7, 12, 9]; // Replace with your actual data
+
+        // Calculate the average rating
+        const totalRatings = ratingsData.reduce((acc, count, i) => acc + (count * (i + 1)), 0);
+        const averageRating = totalRatings / ratingsData.reduce((acc, count) => acc + count, 0);
+
+        // Update the average rating display
+        const averageRatingDisplay = document.getElementById('average-rating');
+        averageRatingDisplay.textContent = averageRating.toFixed(2);
+
+        // Update the average rating bar width
+        const averageRatingBar = document.getElementById('average-rating-bar');
+        averageRatingBar.style.width = (averageRating * 20) + '%';
+
+        // Create rating distribution bars
+        const ratingDistribution = document.getElementById('rating-distribution');
+        const starLabels = ['★', '★★', '★★★', '★★★★', '★★★★★'];
+
+        // Calculate the total count of all ratings
+        const totalRatingCount = ratingsData.reduce((total, count) => total + count, 0);
+
+        // Create bars for each rating
+        for (let i = 0; i < starLabels.length; i++) {
+            const ratingLabel = document.createElement('div');
+            ratingLabel.classList.add('rating-label');
+            ratingLabel.textContent = starLabels[i];
+
+            const ratingBar = document.createElement('div');
+            ratingBar.classList.add('rating-bar1');
+            const barWidth = (ratingsData[i] / totalRatingCount) * 100 + '%';
+            ratingBar.style.width = barWidth;
+
+            const barFill = document.createElement('div');
+            barFill.classList.add('bar-fill');
+
+            const countLabel = document.createElement('div');
+            countLabel.classList.add('rating-label');
+            countLabel.textContent = ratingsData[i] + ' (' + barWidth + ')';
+
+            ratingBar.appendChild(barFill);
+            ratingDistribution.appendChild(ratingLabel);
+            ratingDistribution.appendChild(ratingBar);
+            ratingDistribution.appendChild(countLabel);
+        }
+    });
+
+</script>
+
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.2.1/dist/chart.umd.min.js"></script>  
   <script src="js/chart.js"></script>
 

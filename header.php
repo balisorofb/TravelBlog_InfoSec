@@ -585,7 +585,7 @@ if (isset($_SESSION['user_id']) && !empty($_SESSION['user_id'])) {
                                 <div class="form-check d-flex  mb-5">
                                     <input class="form-check-input me-2" type="checkbox" value="" id="terms" required>
                                     <label class="form-check-label" for="form2Example3">
-                                        I agree all statements in <a href="#!">Terms of service</a>
+                                        I agree all statements in <a href="#!" id="openTerms">Terms of service</a>
                                     </label>
                                 </div>
                                 <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
@@ -615,6 +615,120 @@ if (isset($_SESSION['user_id']) && !empty($_SESSION['user_id'])) {
         password.onchange = validatePassword;
         confirm_password.onkeyup = validatePassword;
     </script>
+
+
+
+<!-- Terms and Policy -->
+<div class="modal fade" id="termsandpolicy" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-dialog-scrollable modal-lg"> 
+        <div class="modal-content" style="font-family: 'Roboto', sans-serif;">
+            <!-- Close button -->
+            <div class="modal-header">
+                <h5 class="modal-title">Terms and Privacy Policy</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+
+            <!-- Modal body with scrollable content -->
+            <div class="modal-body" style="padding: 10%;">
+                <!-- Terms and Privacy Policy content goes here -->
+                <!-- Replace this with your actual content -->
+                <h1 style="font-weight: bold;">Tara Laro Website Terms of Use</h1>
+                <p style="margin-left: 20px;">
+                    <b>Last Updated: [Date]</b>
+                    <br><br>
+                    Welcome to Tara Laro, a website dedicated to showcasing Filipino traditional games through 3D animation.
+                    <br><br>
+                    <ol style="list-style-type: decimal; margin-left: 20px;">
+                        <li><b>Acceptance of Terms</b>
+                            <br>
+                            By accessing or using the Tara Laro website, you agree to be bound by these Terms of Use. If you do not agree with any part of these terms, you should not access the website.
+                        </li>
+                        <li><b>Content</b>
+                            <br>
+                            All content on Tara Laro, including text, images, videos, 3D animations, and other materials, is provided for informational and entertainment purposes. The content is subject to change without notice.
+                        </li>
+                        <li><b>Intellectual Property</b>
+                            <br>
+                            All content and materials on Tara Laro are protected by copyright and other intellectual property laws. You may not reproduce, distribute, or use any content without our explicit written permission.
+                        </li>
+                        <li><b>Privacy</b>
+                            <br>
+                            Your use of Tara Laro is also governed by our Privacy Policy, which is outlined below.
+                        </li>
+                    </ol>
+                    <br>
+                </p>
+
+                <h1 style="font-weight: bold;">Tara Laro Privacy Policy</h1>
+                <p style="margin-left: 20px;">
+                    <b>Last Updated: [Date]</b>
+                    <br><br>
+                    At Tara Laro, we are committed to protecting your privacy and providing a safe and enjoyable experience. This Privacy Policy outlines how we collect, use, and protect your personal information.
+                    <br><br>
+                    <ol style="list-style-type: decimal; margin-left: 20px;">
+                        <li><b>Information We Collect</b>
+                            <br>
+                            We may collect personal and non-personal information, including but not limited to:
+                            <ul style="list-style-type: disc; margin-left: 20px;">
+                                <li>Name</li>
+                                <li>Email address</li>
+                                <li>Picture</li>
+                                <li>IP address</li>
+                                <li>Browser information</li>
+                                <li>Usage data</li>
+                            </ul>
+                        </li>
+                        <li><b>How We Use Your Information</b>
+                            <br>
+                            We may use your information for the following purposes:
+                            <ul style="list-style-type: disc; margin-left: 20px;">
+                                <li>To provide you with information and updates related to Tara Laro.</li>
+                                <li>To improve our website and user experience.</li>
+                                <li>To respond to your inquiries and feedback.</li>
+                                <li>To prevent and address technical issues.</li>
+                            </ul>
+                        </li>
+                        <li><b>Security</b>
+                            <br>
+                            We take appropriate measures to protect your personal information from unauthorized access, disclosure, alteration, or destruction. However, no method of data transmission over the internet is entirely secure, and we cannot guarantee absolute security.
+                        </li>
+                        <li><b>Third-Party Links</b>
+                            <br>
+                            Tara Laro may contain links to third-party websites. We are not responsible for the privacy practices of these external sites and encourage you to review their privacy policies.
+                        </li>
+                        <li><b>Changes to this Policy</b>
+                            <br>
+                            We reserve the right to update our Privacy Policy. Any changes will be posted on this page, and the date of the latest revision will be indicated at the top of the policy. By using Tara Laro, you consent to our Privacy Policy.
+                        </li>
+                    </ol>
+                    <br>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    // JavaScript to open the modal
+    var openModalBtn = document.getElementById('openTerms');
+    var myModal = new bootstrap.Modal(document.getElementById('termsandpolicy'));
+
+    openModalBtn.addEventListener('click', function() {
+        myModal.show();
+    });
+</script>
+
+
+
+
+
+
+
+
+
 
     <!-- Bootstrap and jQuery scripts -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
