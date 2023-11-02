@@ -11,211 +11,166 @@ include 'header.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
+    @import url(https://fonts.googleapis.com/css?family=Oswald:400);
+    @import url(https://fonts.googleapis.com/css2?family=Merriweather%3Awght%40900&family=Sumana%3Awght%40700&display=swap);
 
-        /* Header with background image */
-        .header {
-            background-color: gray; /* Example header image */
+    .about{
+		float: right;
+		text-decoration: none;
+		color: white;
+		font-family: 'Oswald', sans-serif;
+		font-size: 20px;
+		overflow: hidden;
+		letter-spacing: 3px;
+		text-align:right; 
+		margin-right:-700px;
+	}
 
-            color: #fff;
-            text-align: center;
-            padding: 100px 0;
-            height: 80vh;
-        }
+	.about:hover{
+	color:yellow;
+	}
 
-        .header h1 {
-            font-size: 3em;
-            position: relative;
-            padding: 10px 20px;
-            margin-top: -50px;
-        }
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
 
-        .group-logo img {
-            max-width: 20%;
-            margin-top: -50px;
-        }
-        .about-button {
-            background-color: #4CAF50;
-            border: none;
-            color: #fff;
-            padding: 10px 20px;
-            font-size: 1.5em;
-            cursor: pointer;
-            position: relative;
-        }
+    main{
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
 
-        .about-button:hover {
-            background-color: #45a049;
-        }
+    .about-section{
+        background: url(images/aboutbg.png) no-repeat left;
+        background-size: 70%;
+        margin-left: 30px;
+        overflow: hidden;
+        padding: 100px 0;
+    }
 
-        /* About the Client */
-        .client-section {
-            background-color: #f2f2f2;
-            padding: 50px 0;
-        }
+    section{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+        background: #e1e1e1;
+        font-family: "Merriweather";
+    }
 
-        .client-content {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            text-align: center;
-        }
 
-        .client-image {
-            flex: 1;
-            padding: 20px;
-        }
-
-        .client-image img {
-            max-width: 50%;
-        }
-
-        .client-text {
-            flex: 1;
-            padding: 20px;
-        }
-
-        /* Our Team */
-        .team-section {
-            background-color: #333;
-            color: #fff;
-            padding: 50px 0;
-        }
-        .team-section h2 {
-            margin-left:15px;
-        }
-
-        .team-members {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .team-member {
-            flex: 0 0 25%;
-            padding: 20px;
-            transition: transform 0.3s;
-            position: relative;
-            overflow: hidden;
-            text-align: center;
-        }
-
-        .team-member img {
-            max-width: 300px;
-            height: auto;
-            border: 5px solid #fff;
-            border-radius: 50%;
-        }
-
-        .team-member:hover {
-            transform: scale(1.1);
-        }
-
-        .social-icons {
-            position: absolute;
-            bottom: -50px;
-            left: 0;
-            right: 0;
-            text-align: center;
-            background-color: rgba(0, 0, 0, 0.8);
-            padding: 10px 0;
-            transform: translateY(0);
-            transition: transform 0.3s;
-        }
-
-        .team-member:hover .social-icons {
-            transform: translateY(50px);
-        }
-
-        .social-icons a {
-            font-size: 1.5em;
-            color: #fff;
-            margin: 0 10px;
-        }
-        .span{
-            height: 0.5px;
-            width: 80px;
-            background: #777;
-            margin: 30px 0;
-        }
     </style>
 </head>
 
 <body>
-    <div class="header">
-        <div class="group-logo">
-                <img src="images\group_logo.png" >
-            <h1>About Us</h1> 
-            <p>The team behind the project "Tara Laro: A 3D Animation Showcasing the Filipino Traditional Games" is a dedicated and multidisciplinary group of professionals driven by a shared passion for preserving and promoting Filipino cultural heritage. Comprising experienced animators, cultural historians, educational experts, and technology specialists, this diverse team collaborates harmoniously to achieve their central objective of reviving old-fashioned Filipino games.</p>
-            <span><!-- line here --></span>
-            <button class="about-button" onclick="scrollToClient()">Meet the Members</button>
-        </div>
-    </div>
 
-    <div class="client-section" id="client">
-        <div class="client-content">
-            <div class="client-image">
-                <img src="images\museo.png" alt="Client Image"> <!-- Example client image -->
-            </div>
-            <div class="client-text">
-                <h2>About the Client</h2>
-                <p>The Museo Pambata is a children's interactive museum. Unlike traditional museums where items are stored behind glass and touching is highly discouraged, Museo Pambata invites visitors to learn with the exhibits by using their total senses. It envisions itself as a discovery museum and resource center promoting Filipino global culture, children's advocacy programs, and creative educational programs with linkages to global communities. The museum also has regular programs and events for various sectors.</p>
+
+
+<main>
+    <div class="about-section">
+        <div class="inner-container">
+            <h2>About Us</h2>
+            <p class="text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
+            enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor 
+            in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+            sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <div class="team">
+            <a type='button' class="button" href="#team">Meet Our Team</a>
             </div>
         </div>
     </div>
+</main>
 
-    <div class="team-section" id="team">
-        <h2>Our Team</h2>
-        <div class="team-members">
-            <div class="team-member">
-                <img src="images/fio.jpg" alt="Team Member 1"> <!-- Example team member image -->
-                <h3>Fiona Maxine B. Balisoro</h3>
-                <p>PROJECT MANAGER</p>
-
+<section>
+<h1 id="team">Our Team</h1>
+   <div class="person" style="--color: #DB7093">
+   <div class="card">
+        <div class="box">
+            <div class="container-inner">
+                <div class="circle"></div>
+                <img src="images/jay.png">
             </div>
-            <div class="team-member">
-                <img src="images/jays.png" alt="Team Member 2"> <!-- Example team member image -->
-                <h3>Jayson Rhod R. Oquias</h3>
-                <p>3D ANIMATOR/DEVELOPER</p>
-                
-            </div>
-            <div class="team-member">
-                <img src="images/joaqs.jpg" alt="Team Member 3"> <!-- Example team member image -->
-                <h3>Joaquim Anselmo D. DelaCruz</h3>
-                <p>FILM EDITOR/ANIMATOR</p>
-                
-            </div>
-            <div class="team-member">
-                <img src="images/jerome.jpg" alt="Team Member 4"> <!-- Example team member image -->
-                <h3>Jerome C. Cobre</h3>
-                <p>UI DESIGNER/ WEB DEVELOPER</p>
-                
-            </div>
-            <div class="team-member">
-                <img src="images/dean.jpg" alt="Team Member 5" > <!-- Example team member image -->
-                <h3>Avonn C. Nova</h3>
-                <p>PROJECT ADVISER</p>
-            </div>
-            
+        </div>
+        <div class="divider"></div>
+        <h3>Jayson Oquias</h3>
+        <p>Programmerist</p>
+        <div class="icon">
+            <ion-icon name="logo-facebook"></ion-icon>
+            <ion-icon name="logo-twitter"></ion-icon>
+            <ion-icon name="logo-instagram"></ion-icon>
         </div>
     </div>
+    </div>
 
-    <script>
-        function scrollToClient() {
-            var clientSection = document.getElementById("team");
-            clientSection.scrollIntoView({ behavior: "smooth" });
-        }
-    </script>
+    <div class="person" style="--color: #202A44">
+    <div class="card">
+        <div class="box">
+            <div class="container-inner">
+                <div class="circle"></div>
+                <img src="images/leop.png">
+            </div>
+        </div>
+        <div class="divider"></div>
+        <h3>Leo Paragatos</h3>
+        <p>Programmerist</p>
+        <div class="icon">
+            <ion-icon name="logo-facebook"></ion-icon>
+            <ion-icon name="logo-twitter"></ion-icon>
+            <ion-icon name="logo-instagram"></ion-icon>
+        </div>
+    </div>
+    </div>
 
+    <div class="person" style="--color: #987554">
+    <div class="card">
+        <div class="box">
+            <div class="container-inner">
+                <div class="circle"></div>
+                <img src="images/eloisa.png">
+            </div>
+        </div>
+        <div class="divider"></div>
+        <h3>Eloisa Senga</h3>
+        <p>Programmerist</p>
+        <div class="icon">
+            <ion-icon name="logo-facebook"></ion-icon>
+            <ion-icon name="logo-twitter"></ion-icon>
+            <ion-icon name="logo-instagram"></ion-icon>
+        </div>
+    </div>
+    </div>
 
-<?php
+    <div class="person" style="--color: #2C2C2B">
+    <div class="card">
+        <div class="box">
+            <div class="container-inner">
+                <div class="circle"></div>
+                <img src="images/kar.png">
+            </div>
+        </div>
+        <div class="divider"></div>
+        <h3>Karina Dela Cruz</h3>
+        <p>Programmerist</p>
+        <div class="icon">
+            <ion-icon name="logo-facebook"></ion-icon>
+            <ion-icon name="logo-twitter"></ion-icon>
+            <ion-icon name="logo-instagram"></ion-icon>
+        </div>
+    </div>
+    </div>
 
-include 'footer.php';
-?>
+</section>
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
 
 </html>
